@@ -1,4 +1,4 @@
-CREATE TABLE purchasing.productvendor (
+CREATE TABLE public.productvendor (
   productid INTEGER NOT NULL,
   businessentityid INTEGER NOT NULL,
   averageleadtime INTEGER NOT NULL,
