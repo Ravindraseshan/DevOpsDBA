@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+  stages {
+    stage('Flyway Migrate') {
+      steps {
+        sh '''
+          flyway -configFiles=flyway.conf migrate
+        '''
+      }
+    }
+  }
+}
